@@ -1,0 +1,26 @@
+/* styles.css */
+.tech-card {
+  background-color: #0A1128;
+  width: 12rem;
+  height: 12rem;
+  padding: 3rem;
+  margin: 8px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  color: #FEFCFB;
+  transition: transform 0.3s, background-color 0.3s;
+  
+}
+
+.tech-card:hover {
+  background-color: #101C41;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.tech-logo {
+  width: 8rem;
+  height: 8rem;
+}

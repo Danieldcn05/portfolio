@@ -1,0 +1,50 @@
+/* Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #FEFCFB;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+  }
+  .titulo-modal{
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .modal-content p{
+    color: #0A1128;
+    text-align: justify;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .modal-logo {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }

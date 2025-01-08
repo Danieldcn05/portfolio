@@ -1,0 +1,24 @@
+.social-menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 2rem;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .social-menu a {
+    color: #0A1128;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  .social-menu a:hover {
+    color: #1282A2;
+  }
+
+  

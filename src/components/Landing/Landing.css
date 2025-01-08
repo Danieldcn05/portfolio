@@ -1,0 +1,93 @@
+/* Landing.css */
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  text-align: center;
+  padding: 0 15rem; /* Añade margen a los lados */
+  
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%; /* Ajusta el ancho del contenido */
+}
+
+.landing-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los textos a la izquierda */
+  margin-right: 1rem; /* Reduce el espacio entre el texto y la imagen */
+}
+
+.landing-title {
+  font-size: 3rem; /* Tamaño del texto */
+  margin: 0;
+}
+
+.landing-info {
+  font-size: 1.5rem; /* Tamaño del texto del párrafo */
+  
+}
+
+.landing-image {
+  width: 450px; /* Ajusta el tamaño de la imagen */
+  height: 450px;
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover;
+}
+
+
+@media (max-width: 1280px) {
+ .landing {
+    padding: 0; /* Reduce el margen a los lados */
+  }
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .landing {
+    padding: 0 5rem; /* Reduce el margen a los lados */
+  }
+  .landing-content {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .landing-text {
+    align-items: center; /* Centra el texto */
+    margin-right: 0; /* Elimina el margen derecho */
+    margin-bottom: 2rem; /* Añade margen inferior para separar del texto */
+    
+  }
+
+  .landing-image {
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    height: 300px;
+    margin-bottom: 1rem; /* Añade margen inferior para separar del texto */
+  }
+}
+
+@media (max-width: 480px) {
+  .landing {
+    padding: 0 1rem; /* Reduce el margen a los lados */
+  }
+
+  .landing-title {
+    font-size: 2rem; /* Ajusta el tamaño del título */
+  }
+
+  .landing-info {
+    font-size: 1rem; /* Ajusta el tamaño del texto del párrafo */
+  }
+  .landing-image {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: 200px;
+    margin-bottom: 1rem; /* Añade margen inferior para separar del texto */
+  }
+}
+
