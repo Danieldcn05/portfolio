@@ -13,7 +13,7 @@ function Landing() {
             <div className="landing-content">
                 <div className="landing-text">
                     <h1 className="landing-title">Daniel del Cerro</h1>
-                    <p className="landing-info">Desarrollador de Software Fullstack</p>
+                    <p className="landing-info">Desarrollador de Software Full Stack</p>
                     <button onClick={handleButtonClick}>Ver Curriculum</button>
                 </div>
                 <img src={perfilImage} alt="Tu Nombre" className="landing-image" />
