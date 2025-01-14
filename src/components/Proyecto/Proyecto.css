@@ -44,6 +44,7 @@
 	top: 0;
 	left: 0;
 	transition: transform 0.2s ease;
+	object-fit: cover;
 }
 .projcard:nth-child(2n) .projcard-img {
 	left: initial;

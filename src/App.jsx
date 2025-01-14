@@ -15,6 +15,8 @@ import py from './assets/images/logo_py.png';
 import react from './assets/images/logo_react.png';
 import spring from './assets/images/logo_spring.png';
 
+import studyCard1 from './assets/images/study_cards_1.png';
+
 const techs = [
   { logo: js, name: 'JavaScript', info: 'Domino JavaScript, uno de los lenguajes más usados, aplicándolo tanto en frontend (React, Angular) como en backend (Node.js). Manejo funcionalidades avanzadas como manipulación del DOM, promesas, asincronía, módulos ES6+ y llamadas API. Mi experiencia abarca desde el desarrollo de interfaces dinámicas hasta la creación de servicios eficientes del lado del servidor.' },
   { logo: py, name: 'Python', info: 'Trabajo con Python, uno de los lenguajes en auge, aprovechando su versatilidad y rica colección de librerías. He desarrollado interfaces gráficas con Tkinter y soluciones eficientes para análisis de datos, web scraping y automatización usando librerías como Matplotlib, BeautifulSoup y Selenium, adaptándome a diversos desafíos con creatividad y precisión.' },
@@ -28,7 +30,7 @@ const techs = [
 ];
 
 const proyectos = [
-  { name: 'Study Cards', subtitle: 'Proyecto Front-end con React', img: 'https://picsum.photos/800/600?image=1041', linkGit: 'https://github.com', linkDemo: 'https://google.com', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae augue porttitor, pulvinar arcu at, rutrum arcu. Praesent scelerisque rhoncus gravida. Aenean dictum accumsan est, non rhoncus sapien. Praesent sed porttitor eros, ut hendrerit augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam non vulputate diam, ut ultricies leo. Nunc fermentum enim elit, ac aliquam massa blandit ut.' },
+  { name: 'Study Cards', subtitle: 'Proyecto Front-end con React', img: studyCard1, linkGit: 'https://github.com/Danieldcn05/card_study', linkDemo: 'https://google.com', info: 'Aplicación web para crear mazos de cartas de estudio personalizables, con preguntas y respuestas en lados opuestos. Los usuarios pueden personalizar colores, tipografías y bordes, además de exportar e importar los mazos en formato JSON para facilitar su gestión y uso en distintos dispositivos. Desarrollada con React, ofrece una experiencia intuitiva para potenciar el aprendizaje.' },
   { name: 'Time Tracker', subtitle: 'Proyecto Full Stack con Python', img: 'https://picsum.photos/800/600?image=1042', linkGit: 'https://github.com', linkDemo: 'https://google.com', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae augue porttitor, pulvinar arcu at, rutrum arcu. Praesent scelerisque rhoncus gravida. Aenean dictum accumsan est, non rhoncus sapien. Praesent sed porttitor eros, ut hendrerit augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam non vulputate diam, ut ultricies leo. Nunc fermentum enim elit, ac aliquam massa blandit ut.' },
   { name: 'Mi Portfolio', subtitle: 'Proyecto Front-end con React', img: 'https://picsum.photos/800/600?image=1043', linkGit: 'https://github.com', linkDemo: 'https://google.com', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae augue porttitor, pulvinar arcu at, rutrum arcu. Praesent scelerisque rhoncus gravida. Aenean dictum accumsan est, non rhoncus sapien. Praesent sed porttitor eros, ut hendrerit augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam non vulputate diam, ut ultricies leo. Nunc fermentum enim elit, ac aliquam massa blandit ut.' }
 ];
