@@ -1,26 +1,22 @@
-// TechCard.js
-import React from 'react';
 import './Proyecto.css';
 
-const Proyecto = ({ img, name,subtitle, info, linkGit, linkDemo }) => {
+const Proyecto = ({ img, name, subtitle, info, linkGit, onOpenGallery }) => {
+    
     return (
-        <div class="projcard projcard-blue">
-            <div class="projcard-innerbox">
-                <img class="projcard-img" src={img} />
-                <div class="projcard-textbox">
-                    <div class="projcard-title">{name}</div>
-                    <div class="projcard-subtitle">{subtitle}</div>
-                    <div class="projcard-bar"></div>
-                    <div class="projcard-description">{info}</div>
-                    
-                    <button class="projcard-button" onClick={() => window.open(linkGit, '_blank')}>GitHub</button>
-                    <button class="projcard-button" onClick={() => window.open(linkDemo, '_blank')}>Demo</button>
+        <div className="projcard projcard-blue">
+            <div className="projcard-innerbox">
+                <img className="projcard-img" src={img} alt={name} />
+                <div className="projcard-textbox">
+                    <div className="projcard-title">{name}</div>
+                    <div className="projcard-subtitle">{subtitle}</div>
+                    <div className="projcard-bar"></div>
+                    <div className="projcard-description">{info}</div>
 
-                    
-                    
+                    <button className="projcard-button" onClick={() => window.open(linkGit, '_blank')}>GitHub</button>
+                    <button className="projcard-button" onClick={onOpenGallery}>Imágenes</button>
                 </div>
             </div>
-        </div>  
+        </div>
     );
 };
 
