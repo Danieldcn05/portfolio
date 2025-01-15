@@ -18,8 +18,8 @@
     border-radius: 10px;
     text-align: center;
     position: relative;
-    max-width: 500px;
-    width: 100%;
+    width: 80rem;
+    height: 50rem;
 }
 
 .close-button {
@@ -35,3 +35,14 @@
     overflow: hidden;
 }
 
+.splide{
+    width: 100%;
+    height: 100%;
+}
+
+.splide__slide img {
+    width: 70rem;
+    height: 40rem;
+    object-fit: cover;
+    
+}

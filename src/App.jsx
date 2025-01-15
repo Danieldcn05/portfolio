@@ -5,7 +5,7 @@ import TechCardList from './components/TechCardList/TechCardList';
 import SocialMenu from './components/SocialMenu/SocialMenu';
 import ProyectoList from './components/ProyectosList/ProyectoList';
 import Contact from './components/Contact/Contact';
-import ImageGallery from './components/ImageGallery/ImageGallery';
+
 
 import ang from './assets/images/logo_ang.png';
 import bd from './assets/images/logo_bd.png';
@@ -18,6 +18,9 @@ import react from './assets/images/logo_react.png';
 import spring from './assets/images/logo_spring.png';
 
 import studyCard1 from './assets/images/study_cards_1.png';
+import studyCard2 from './assets/images/study_cards_2.png';
+import studyCard3 from './assets/images/study_cards_3.png';
+
 
 const techs = [
   { logo: js, name: 'JavaScript', info: 'Domino JavaScript, uno de los lenguajes más usados, aplicándolo tanto en frontend (React, Angular) como en backend (Node.js). Manejo funcionalidades avanzadas como manipulación del DOM, promesas, asincronía, módulos ES6+ y llamadas API. Mi experiencia abarca desde el desarrollo de interfaces dinámicas hasta la creación de servicios eficientes del lado del servidor.' },
@@ -35,21 +38,11 @@ const techs = [
 
 
 function App() {
-  const [showGallery, setShowGallery] = useState(false);
-
-  const handleOpenGallery = () => {
-    setShowGallery(true);
-    console.log('open gallery');
-  };
-
-  const handleCloseGallery = () => {
-    setShowGallery(false);
-  };
 
   const proyectos = [
-    { name: 'Study Cards', subtitle: 'Proyecto Front-end con React', img: studyCard1, linkGit: 'https://github.com/Danieldcn05/card_study', info: 'Aplicación web para crear mazos de cartas de estudio personalizables, con preguntas y respuestas en lados opuestos. Los usuarios pueden personalizar colores, tipografías y bordes, además de exportar e importar los mazos en formato JSON para facilitar su gestión y uso en distintos dispositivos. Desarrollada con React, ofrece una experiencia intuitiva para potenciar el aprendizaje.', handleOpenGallery: handleOpenGallery },
-    { name: 'Time Tracker', subtitle: 'Proyecto Full Stack con Python', img: 'https://picsum.photos/800/600?image=1042', linkGit: 'https://github.com', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae augue porttitor, pulvinar arcu at, rutrum arcu. Praesent scelerisque rhoncus gravida. Aenean dictum accumsan est, non rhoncus sapien. Praesent sed porttitor eros, ut hendrerit augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam non vulputate diam, ut ultricies leo. Nunc fermentum enim elit, ac aliquam massa blandit ut.', handleOpenGallery: handleOpenGallery  },
-    { name: 'Mi Portfolio', subtitle: 'Proyecto Front-end con React', img: 'https://picsum.photos/800/600?image=1043', linkGit: 'https://github.com', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae augue porttitor, pulvinar arcu at, rutrum arcu. Praesent scelerisque rhoncus gravida. Aenean dictum accumsan est, non rhoncus sapien. Praesent sed porttitor eros, ut hendrerit augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam non vulputate diam, ut ultricies leo. Nunc fermentum enim elit, ac aliquam massa blandit ut.', handleOpenGallery: handleOpenGallery  }
+    { name: 'Study Cards', subtitle: 'Proyecto Front-end con React', img: studyCard3, linkGit: 'https://github.com/Danieldcn05/card_study', info: 'Aplicación web para crear mazos de cartas de estudio personalizables, con preguntas y respuestas en lados opuestos. Los usuarios pueden personalizar colores, tipografías y bordes, además de exportar e importar los mazos en formato JSON para facilitar su gestión y uso en distintos dispositivos. Desarrollada con React, ofrece una experiencia intuitiva para potenciar el aprendizaje.', images: [studyCard1, studyCard2, studyCard3] },
+    { name: 'Time Tracker', subtitle: 'Proyecto Full Stack con Python', img: 'https://picsum.photos/800/600?image=1042', linkGit: 'https://github.com', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae augue porttitor, pulvinar arcu at, rutrum arcu. Praesent scelerisque rhoncus gravida. Aenean dictum accumsan est, non rhoncus sapien. Praesent sed porttitor eros, ut hendrerit augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam non vulputate diam, ut ultricies leo. Nunc fermentum enim elit, ac aliquam massa blandit ut.', images: [] },
+    { name: 'Mi Portfolio', subtitle: 'Proyecto Front-end con React', img: 'https://picsum.photos/800/600?image=1043', linkGit: 'https://github.com', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae augue porttitor, pulvinar arcu at, rutrum arcu. Praesent scelerisque rhoncus gravida. Aenean dictum accumsan est, non rhoncus sapien. Praesent sed porttitor eros, ut hendrerit augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam non vulputate diam, ut ultricies leo. Nunc fermentum enim elit, ac aliquam massa blandit ut.',  images: [] },
   ];
 
   return (
@@ -60,7 +53,6 @@ function App() {
       <TechCardList techs={techs} />
 
       <ProyectoList proyectos={proyectos} />
-      <ImageGallery show={showGallery} onClose={handleCloseGallery} />
 
       <Contact />
     </div>

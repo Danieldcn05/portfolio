@@ -4,7 +4,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
 
-const ImageGallery = ({ show, onClose }) => {
+const ImageGallery = ({ show, onClose, images }) => {
     useEffect(() => {
         if (show) {
             document.body.classList.add('no-scroll');
@@ -27,10 +27,13 @@ const ImageGallery = ({ show, onClose }) => {
                 <span className="close-button" onClick={onClose}>&times;</span>
                 <Splide aria-label="My Favorite Images">
                     <SplideSlide>
-                        <img src="https://picsum.photos/200/300" alt="Image 1" />
+                        <img src={images[0]} alt="Image 1" />
                     </SplideSlide>
                     <SplideSlide>
-                        <img src="https://picsum.photos/200/300" alt="Image 2" />
+                        <img src={images[1]} alt="Image 2" />
+                    </SplideSlide>
+                    <SplideSlide>
+                        <img src={images[2]} alt="Image 2" />
                     </SplideSlide>
                 </Splide>
             </div>
