@@ -26,12 +26,12 @@ h2{
 }
 
 button{
-  color: #0A1128;
+  color: #FEFCFB;
   border-color: #0A1128;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #FEFCFB;
+  background-color: #0A1128;
   border-radius: 5px;
   padding: 0.4rem;
   cursor: pointer;

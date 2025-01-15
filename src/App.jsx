@@ -41,8 +41,7 @@ function App() {
 
   const proyectos = [
     { name: 'Study Cards', subtitle: 'Proyecto Front-end con React', img: studyCard3, linkGit: 'https://github.com/Danieldcn05/card_study', info: 'Aplicación web para crear mazos de cartas de estudio personalizables, con preguntas y respuestas en lados opuestos. Los usuarios pueden personalizar colores, tipografías y bordes, además de exportar e importar los mazos en formato JSON para facilitar su gestión y uso en distintos dispositivos. Desarrollada con React, ofrece una experiencia intuitiva para potenciar el aprendizaje.', images: [studyCard1, studyCard2, studyCard3] },
-    { name: 'Time Tracker', subtitle: 'Proyecto Full Stack con Python', img: 'https://picsum.photos/800/600?image=1042', linkGit: 'https://github.com', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae augue porttitor, pulvinar arcu at, rutrum arcu. Praesent scelerisque rhoncus gravida. Aenean dictum accumsan est, non rhoncus sapien. Praesent sed porttitor eros, ut hendrerit augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam non vulputate diam, ut ultricies leo. Nunc fermentum enim elit, ac aliquam massa blandit ut.', images: [] },
-    { name: 'Mi Portfolio', subtitle: 'Proyecto Front-end con React', img: 'https://picsum.photos/800/600?image=1043', linkGit: 'https://github.com', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae augue porttitor, pulvinar arcu at, rutrum arcu. Praesent scelerisque rhoncus gravida. Aenean dictum accumsan est, non rhoncus sapien. Praesent sed porttitor eros, ut hendrerit augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam non vulputate diam, ut ultricies leo. Nunc fermentum enim elit, ac aliquam massa blandit ut.',  images: [] },
+    { name: 'Time Tracker', subtitle: 'Proyecto Full Stack con Python', img: 'https://picsum.photos/800/600?image=1042', linkGit: 'https://github.com/Danieldcn05/time_tracker', info: 'Aplicación de rastreo de tiempo de uso de aplicaciones desarrollada en Python. Utiliza psutil para monitorear procesos en tiempo real, registrando cuándo se inician y cierran las aplicaciones seleccionadas. Los datos se almacenan en una base de datos SQLite para análisis posterior. La interfaz gráfica, creada con Tkinter, permite al usuario gestionar las aplicaciones a rastrear.', images: [] }
   ];
 
   return (
@@ -50,9 +49,9 @@ function App() {
       <Navbar />
       <SocialMenu />
       <Landing />
+      <ProyectoList proyectos={proyectos} />
       <TechCardList techs={techs} />
 
-      <ProyectoList proyectos={proyectos} />
 
       <Contact />
     </div>
