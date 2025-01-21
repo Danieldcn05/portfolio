@@ -24,7 +24,7 @@ const ImageGallery = ({ show, onClose, images }) => {
     return (
         <div className="gallery-overlay">
             <div className="gallery-content">
-                <span className="close-button" onClick={onClose}>&times;</span>
+                <span className="close-button2" onClick={onClose}>&times;</span>
                 <Splide aria-label="My Favorite Images">
                     <SplideSlide>
                         <img src={images[0]} alt="Image 1" />

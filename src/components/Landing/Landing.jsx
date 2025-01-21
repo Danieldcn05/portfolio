@@ -1,7 +1,7 @@
 import React from 'react';
 import './Landing.css'; // Importa el archivo CSS para los estilos
 import perfilImage from '../../assets/images/imagen_perfil.jpg'; // Importa la imagen
-import curriculumPDF from '../../assets/curr.pdf'; // Importa el PDF
+import curriculumPDF from '../../assets/CV_Daniel_del_Cerro_Navarro.pdf'; // Importa el PDF
 
 function Landing() {
     const handleButtonClick = () => {

@@ -13,7 +13,7 @@
 }
 
 .gallery-content {
-    background-color: #FEFCFB;
+    background-color: #0A1128;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
@@ -22,12 +22,13 @@
     height: 50rem;
 }
 
-.close-button {
+.close-button2 {
     position: absolute;
     top: 0px;
     right: 10px;
     font-size: 2rem;
     cursor: pointer;
+    color: white;
 }
 
 
